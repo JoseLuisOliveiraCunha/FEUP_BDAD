@@ -123,6 +123,7 @@ insert into Pessoa values (115);
 insert into Pessoa values (116);
 insert into Pessoa values (117);
 insert into Pessoa values (118);
+insert into Pessoa values (119);
 
 /*Cliente*/
 INSERT INTO Cliente values (1, 'Anacleto Santos', 25);
@@ -225,6 +226,8 @@ INSERT INTO Cliente values (97, 'James Perkins', 14);
 INSERT INTO Cliente values (98, 'Phyllis Andrews', 85);
 INSERT INTO Cliente values (99, 'Patrick Ortiz', 55);
 INSERT INTO Cliente values (100, 'Nicole Harris', 83);
+INSERT INTO Cliente values (119, 'Shawn Nichols', 69);
+
 
 /*Funcionario*/
 INSERT INTO Funcionario values (101);
@@ -275,10 +278,10 @@ INSERT INTO Empregado values (117, 'Rui Mendes', 600);
 INSERT INTO Empregado values (118, 'Fernando Alvim', 714);
 
 /*Funcao*/
-INSERT INTO Funcao values ('Auxiliar de Limpeza');
-INSERT INTO Funcao values ('Tratador Piscina');
-INSERT INTO Funcao values ('Bilheteira');
-INSERT INTO Funcao values ('Nadador Salvador');
+INSERT INTO Funcao values (1, 'Auxiliar de Limpeza');
+INSERT INTO Funcao values (2, 'Tratador Piscina');
+INSERT INTO Funcao values (3, 'Bilheteira');
+INSERT INTO Funcao values (4, 'Nadador Salvador');
 
 /*Item*/
 INSERT INTO Item values (00001, 'barbatanas', 19);
@@ -327,8 +330,8 @@ INSERT INTO Fornecedor values (917784688);
 INSERT INTO Fornecedor values (937544865);
 
 /*Loja*/
-INSERT INTO Loja values ('Loja Salpico', '10:00', '18:00', 1);
-INSERT INTO Loja values ('Loja Esguicho', '08:30', '17:30', 2);
+INSERT INTO Loja values (1, 'Loja Salpico', '10:00', '18:00', 1);
+INSERT INTO Loja values (2, 'Loja Esguicho', '08:30', '17:30', 2);
 
 /*Ocorrencia*/
 INSERT INTO Ocorrencia values (1, '9:30', '11:30', 'Segunda');
@@ -1003,28 +1006,28 @@ insert into AulaModalidade values (13, 'Costas', 2);
 insert into AulaModalidade values (14, 'Hidrobike', 1);
 
 /*TrabalhaLoja*/
-insert into TrabalhaLoja values (109, 'Loja Salpico');
-insert into TrabalhaLoja values (110, 'Loja Salpico');
-insert into TrabalhaLoja values (111, 'Loja Salpico');
-insert into TrabalhaLoja values (112, 'Loja Salpico');
-insert into TrabalhaLoja values (113, 'Loja Salpico');
+insert into TrabalhaLoja values (109, 1);
+insert into TrabalhaLoja values (110, 1);
+insert into TrabalhaLoja values (111, 1);
+insert into TrabalhaLoja values (112, 1);
+insert into TrabalhaLoja values (113, 1);
 
-insert into TrabalhaLoja values (114, 'Loja Esguicho');
-insert into TrabalhaLoja values (115, 'Loja Esguicho');
-insert into TrabalhaLoja values (116, 'Loja Esguicho');
-insert into TrabalhaLoja values (117, 'Loja Esguicho');
-insert into TrabalhaLoja values (118, 'Loja Esguicho');
+insert into TrabalhaLoja values (114, 2);
+insert into TrabalhaLoja values (115, 2);
+insert into TrabalhaLoja values (116, 2);
+insert into TrabalhaLoja values (117, 2);
+insert into TrabalhaLoja values (118, 2);
 
 /*Vendido*/
-insert into Vendido values (00001, 'Loja Salpico');
-insert into Vendido values (00002, 'Loja Salpico');
-insert into Vendido values (00003, 'Loja Salpico');
-insert into Vendido values (00004, 'Loja Salpico');
+insert into Vendido values (00001, 1);
+insert into Vendido values (00002, 1);
+insert into Vendido values (00003, 1);
+insert into Vendido values (00004, 1);
 
-insert into Vendido values (00007, 'Loja Esguicho');
-insert into Vendido values (00009, 'Loja Esguicho');
-insert into Vendido values (00010, 'Loja Esguicho');
-insert into Vendido values (00011, 'Loja Esguicho');
+insert into Vendido values (00007, 2);
+insert into Vendido values (00009, 2);
+insert into Vendido values (00010, 2);
+insert into Vendido values (00011, 2);
 
 /*Utilizado*/
 INSERT INTO Utilizado values (00005, 1);
@@ -1063,14 +1066,14 @@ INSERT INTO Fornecido values (00015, 917784688);
 INSERT INTO Fornecido values (00016, 917784688);
 
 /*Desempenha*/
-INSERT INTO Desempenha values (109, 'Auxiliar de Limpeza');
-INSERT INTO Desempenha values (110, 'Auxiliar de Limpeza');
-INSERT INTO Desempenha values (111, 'Tratador Piscina');
-INSERT INTO Desempenha values (112, 'Bilheteira');
-INSERT INTO Desempenha values (113, 'Nadador Salvador');
+INSERT INTO Desempenha values (109, 1);
+INSERT INTO Desempenha values (110, 1);
+INSERT INTO Desempenha values (111, 2);
+INSERT INTO Desempenha values (112, 3);
+INSERT INTO Desempenha values (113, 4);
 
-INSERT INTO Desempenha values (114, 'Auxiliar de Limpeza');
-INSERT INTO Desempenha values (115, 'Auxiliar de Limpeza');
-INSERT INTO Desempenha values (116, 'Tratador Piscina');
-INSERT INTO Desempenha values (117, 'Bilheteira');
-INSERT INTO Desempenha values (118, 'Nadador Salvador');
+INSERT INTO Desempenha values (114, 1);
+INSERT INTO Desempenha values (115, 1);
+INSERT INTO Desempenha values (116, 2);
+INSERT INTO Desempenha values (117, 3);
+INSERT INTO Desempenha values (118, 4);
